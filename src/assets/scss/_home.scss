@@ -1,0 +1,47 @@
+@import "_variable.scss";
+
+//顶部
+.header {
+  height: $headerH;
+  //background: $headerbgC;
+  clear: both;
+  overflow: hidden;
+  .logo {
+    float: left;
+    a {
+      line-height: $headerH;
+      color: $headertxC;
+    }
+  }
+  .head-menu {
+    float: right;
+    li {
+      height: $headerH;
+      line-height: $headerH;
+    }
+  }
+}
+
+//面包屑
+.el-breadcrumb {
+  padding-bottom: 20px;
+}
+
+//左导航
+.aside-menu {
+  width: 210px;
+  li {
+    &.is-active,
+    &.is-opened {
+      > a {
+        color: red;
+      }
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: #303133;
+    }
+  }
+}
+
